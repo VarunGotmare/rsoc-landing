@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="absolute bottom-4 w-full flex items-center justify-between px-8 text-sm text-muted-foreground z-10 font-medium">
       {/* Left - Copyright */}
-      <div>© RSOC 2025 · Crafted with 💛</div>
+      <div>© RSOC 2025</div>
 
       {/* Right - Social Icons */}
       <div className="flex gap-4">

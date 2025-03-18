@@ -24,15 +24,27 @@ export default function Navbar() {
 
         {/* Desktop Nav Links */}
         <nav className="hidden sm:flex space-x-6 text-sm text-black">
-          {["About", "Tracks", "Register", "Contact"].map((item) => (
-            <Link
-              key={item}
-              href={`/${item.toLowerCase()}`}
+        <Link
+              key={"About"}
+              href={`/about`}
               className="relative inline-block text-lg font-bold text-black hover:text-yellow-900 hover:bg-yellow-100 px-2 py-1 rounded-md transition duration-300"
             >
-              {item}
+              About
             </Link>
-          ))}
+            <Link
+              key={"Our Team"}
+              href={`/team`}
+              className="relative inline-block text-lg font-bold text-black hover:text-yellow-900 hover:bg-yellow-100 px-2 py-1 rounded-md transition duration-300"
+            >
+              Our Team
+            </Link>
+            <a
+              key={"Register"}
+              href={"https://form.typeform.com/to/WN79Ogrg"}
+              className="relative inline-block text-lg font-bold text-black hover:text-yellow-900 hover:bg-yellow-100 px-2 py-1 rounded-md transition duration-300"
+            >
+              Register
+            </a>
         </nav>
 
         {/* Mobile Hamburger */}
