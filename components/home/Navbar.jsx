@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -21,13 +22,13 @@ export default function Navbar() {
         {/* Desktop Nav Links */}
         <nav className="hidden sm:flex space-x-6 text-sm text-black">
           {["About", "Tracks", "Register", "Contact"].map((item) => (
-            <a
+            <Link
               key={item}
-              href={`#${item.toLowerCase()}`}
+              href={`/${item.toLowerCase()}`}
               className="relative inline-block text-lg font-bold text-black hover:text-yellow-900 hover:bg-yellow-100 px-2 py-1 rounded-md transition duration-300"
             >
               {item}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -47,14 +48,14 @@ export default function Navbar() {
       {isMobileMenuOpen && (
         <div className="sm:hidden flex flex-col items-center bg-white border-t border-[#ffd319] px-6 py-4 space-y-4 text-center text-lg font-semibold text-black rounded-b-2xl shadow-inner transition-all duration-300">
           {["About", "Tracks", "Register", "Contact"].map((item) => (
-            <a
+            <Link
               key={item}
-              href={`#${item.toLowerCase()}`}
+              href={`/${item.toLowerCase()}`}
               onClick={() => setIsMobileMenuOpen(false)}
               className="w-full px-4 py-2 rounded-md hover:bg-yellow-100 transition"
             >
               {item}
-            </a>
+            </Link>
           ))}
         </div>
       )}

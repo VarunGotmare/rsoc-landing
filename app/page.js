@@ -7,10 +7,10 @@ import { useRef, useState, useEffect } from "react";
 
 export default function Home() {
   const flipWords = [
-    "• An 8 hour hackathon.",
-    "• Powered by Cyber Security Department.",
-    "• Build. Code. Compete.",
-    "• RSOC 2025.",
+    "An 8 hour hackathon.",
+    "Powered by Cyber Security Department.",
+    "Build. Code. Compete.",
+    "RSOC 2025.",
   ];
 
 
@@ -50,7 +50,7 @@ export default function Home() {
         </span>
 
         {/* Main Title */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-b from-[#ffd319] via-[#ff2975] to-[#8c1eff] bg-clip-text text-transparent leading-tight tracking-tight font-[family-name:var(--font-geist-mono)]">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold bg-gradient-to-b from-[#ffd319] via-[#ff2975] to-[#8c1eff] bg-clip-text text-transparent leading-tight tracking-tight font-[family-name:var(--font-geist-mono)]">
           Raisoni Summer Of Code
         </h1>
 
@@ -73,6 +73,17 @@ export default function Home() {
 
       <RetroGrid />
       <Footer />
+      {/* Floating Animated Prize Image */}
+      <div className="fixed bottom-32 right-32 w-24 sm:w-60 z-50 floating-prize">
+        <img
+          src="https://i.postimg.cc/xdNsN8ZN/prized.png"
+          alt="Prize"
+          className="w-full h-auto object-contain drop-shadow-lg"
+        />
+      </div>
+
+
     </div>
+
   );
 }
