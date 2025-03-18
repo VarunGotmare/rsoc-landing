@@ -5,6 +5,8 @@ import { FlipWords } from "@/components/ui/flip-words";
 import confetti from "canvas-confetti";
 import { useRef, useState, useEffect } from "react";
 
+
+
 export default function Home() {
   const flipWords = [
     "• An 8 hour hackathon.",
