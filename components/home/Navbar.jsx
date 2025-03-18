@@ -62,16 +62,27 @@ export default function Navbar() {
       {/* Mobile Dropdown Menu */}
       {isMobileMenuOpen && (
         <div className="sm:hidden flex flex-col items-center bg-white border-t border-[#ffd319] px-6 py-4 space-y-4 text-center text-lg font-semibold text-black rounded-b-2xl shadow-inner transition-all duration-300">
-          {["About", "Tracks", "Register", "Contact"].map((item) => (
+          <Link
+              key={"About"}
+              href={`/about`}
+              className="w-full px-4 py-2 rounded-md  hover:bg-yellow-100 transition"
+            >
+              About
+            </Link>
             <Link
-              key={item}
-              href={`/${item.toLowerCase()}`}
-              onClick={() => setIsMobileMenuOpen(false)}
+              key={"Our Team"}
+              href={`/team`}
               className="w-full px-4 py-2 rounded-md hover:bg-yellow-100 transition"
             >
-              {item}
+              Our Team
             </Link>
-          ))}
+            <a
+              key={"Register"}
+              href={"https://form.typeform.com/to/WN79Ogrg"}
+              className="w-full px-4 py-2 rounded-md hover:bg-yellow-100 transition"
+            >
+              Register
+            </a>
         </div>
       )}
 
