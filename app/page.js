@@ -32,7 +32,7 @@ export default function Home() {
     confetti({
       particleCount: 80,
       spread: 70,
-      origin: { y: 0.8 },
+      origin: { y: 0.9 },
     });
 
     setTimeout(() => {
