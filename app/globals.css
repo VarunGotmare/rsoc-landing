@@ -134,6 +134,30 @@
   animation: gridScroll 20s linear infinite;
 }
 
+
+.floating-prize {
+  animation: float 3.5s ease-in-out infinite;
+  transition: transform 0.3s ease;
+  transform: rotate(2deg); /* Slight initial rotation */
+}
+
+.floating-prize:hover {
+  transform: scale(1.1) rotate(4deg); /* Grows and rotates a bit more on hover */
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(2deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(4deg);
+  }
+  100% {
+    transform: translateY(0) rotate(2deg);
+  }
+}
+
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
