@@ -1,5 +1,6 @@
 import { InteractiveGridPattern } from "@/components/magicui/interactive-grid-pattern";
 import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
+import { NumberTicker } from "@/components/magicui/number-ticker";
 
 export default function About() {
   return (
@@ -25,24 +26,48 @@ export default function About() {
 
         {/* About Sections */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 pt-6">
+
           <div className="p-6 bg-white shadow-md rounded-lg">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-800">
-              Our Mission
+              🎉 💰Prize Pool ₹<NumberTicker value={25000}></NumberTicker>
+            </h2>
+            <p className="mt-2 text-sm sm:text-base md:text-lg text-gray-600">
+              Gear up for our hackathon featuring a jaw-dropping prize pool of over 25k+ in rewards. Compete, innovate, and win big!
+            </p>
+          </div>
+
+          <div className="p-6 bg-white shadow-md rounded-lg">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-800">
+              🤝 Team Size 4
+            </h2>
+            <p className="mt-2 text-sm sm:text-base md:text-lg text-gray-600">
+              Our hackathons encourage dynamic collaboration within 4-member groups, where every voice matters and teamwork transforms ideas into reality.
+            </p>
+          </div>
+
+
+          <div className="p-6 bg-white shadow-md rounded-lg">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-800">
+            🚀 Our Mission ✨
             </h2>
             <p className="mt-2 text-sm sm:text-base md:text-lg text-gray-600">
               To foster innovation and inspire collaboration among developers through
               challenging and fun competitions.
             </p>
           </div>
+
           <div className="p-6 bg-white shadow-md rounded-lg">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-800">
-              Our Vision
+            👁️‍🗨️ Our Vision 🌟
             </h2>
             <p className="mt-2 text-sm sm:text-base md:text-lg text-gray-600">
               To create an environment where creativity meets technology and everyone
               can learn, build, and grow.
             </p>
           </div>
+
+
+
         </div>
 
         {/* Velocity Scroll at the Bottom */}
