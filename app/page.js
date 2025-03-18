@@ -144,7 +144,7 @@ export default function Home() {
       {/* Floating Prize Images - Only sm+ */}
       <div className="hidden sm:block fixed bottom-24 right-10 w-24 sm:w-40 md:w-60 z-50">
         <img
-          src="https://i.postimg.cc/xdNsN8ZN/prized.png"
+          src="/prized.png"
           alt="Prize"
           className="w-auto h-auto drop-shadow-lg"
         />
