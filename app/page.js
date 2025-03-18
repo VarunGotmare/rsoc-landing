@@ -132,15 +132,6 @@ export default function Home() {
           className="w-auto h-auto drop-shadow-lg"
         />
       </div>
-
-      {/* Optional: Mobile Prize Icons - Smaller */}
-      <div className="sm:hidden fixed bottom-20 left-1/2 -translate-x-1/2 w-24 z-40">
-        <img
-          src="/float.png"
-          alt="Prize"
-          className="w-full h-auto drop-shadow-md"
-        />
-      </div>
     </div>
   );
 }
