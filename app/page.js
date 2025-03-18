@@ -42,7 +42,7 @@ export default function Home() {
 
   return (
     <div className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background font-[family-name:var(--font-geist-sans)]">
-      <div className="z-10 flex flex-col items-center space-y-3.5 sm:space-y-3 text-center px-4">
+      <div className="z-10 flex mt-12 flex-col items-center space-y-3.5 sm:space-y-3 text-center px-4">
         {/* Department & Presents */}
         <span className="text-xl sm:text-2xl font-semibold text-black tracking-wide">
           Department of CSE Cyber Security
@@ -74,6 +74,40 @@ export default function Home() {
       </div>
 
       <RetroGrid />
+        {/* Floating Tech Icons */}
+<div className="absolute top-32 left-0  w-full h-[200px] pointer-events-none z-30">
+  <img
+    src="/icons/CSS3.png"
+    alt="React"
+    className="absolute top-6 left-10 w-10 sm:w-14 animate-[float_4s_ease-in-out_infinite] rotate-[10deg]"
+  />
+  <img
+    src="/icons/android.png"
+    alt="Node.js"
+    className="absolute top-12 right-14 w-10 sm:w-14 animate-[float_4.5s_ease-in-out_infinite] rotate-[-6deg]"
+  />
+  <img
+    src="/icons/Docker.png"
+    alt="MongoDB"
+    className="absolute top-20 left-[40%] w-10 sm:w-14 animate-[float_3.5s_ease-in-out_infinite] rotate-[8deg]"
+  />
+  <img
+    src="/icons/JavaScript.png"
+    alt="JavaScript"
+    className="absolute top-8 right-[35%] w-10 sm:w-14 animate-[float_5s_ease-in-out_infinite] rotate-[-10deg]"
+  />
+  <img
+    src="/icons/Swift.png"
+    alt="HTML"
+    className="absolute top-16 left-[20%] w-10 sm:w-14 animate-[float_4s_ease-in-out_infinite] rotate-[5deg]"
+  />
+  <img
+    src="/icons/vsc.png"
+    alt="CSS"
+    className="absolute top-24 right-[22%] w-10 sm:w-14 animate-[float_4.2s_ease-in-out_infinite] rotate-[12deg]"
+  />
+</div>
+
       <Footer />
       {/* Floating Animated Prize Image */}
       <div className="fixed bottom-32 right-32 w-24 sm:w-60 z-50 floating-prize">
@@ -83,7 +117,14 @@ export default function Home() {
           className="w-auto h-auto  drop-shadow-lg"
         />
       </div>
-
+      {/* Floating Animated Prize Image */}
+      <div className="fixed bottom-32 left-32 w-24 sm:w-60 z-50 floating-prize">
+        <img
+          src="/float.png"
+          alt="Prize"
+          className="w-auto h-auto  drop-shadow-lg"
+        />
+      </div>
 
     </div>
 
