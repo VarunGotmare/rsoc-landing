@@ -107,12 +107,36 @@ export default function Home() {
         />
       </div>
 
-      {/* Optional: Minimal Floating Tech Icons on Mobile */}
-      <div className="absolute top-32 left-0 w-full flex justify-center gap-6 z-30 sm:hidden">
-        <img src="/icons/CSS3.png" alt="CSS" className="w-8 h-8 animate-bounce" />
-        <img src="/icons/JavaScript.png" alt="JS" className="w-8 h-8 animate-bounce delay-200" />
-        <img src="/icons/android.png" alt="Android" className="w-8 h-8 animate-bounce delay-400" />
-      </div>
+      {/* Scattered Floating Tech Icons on Mobile */}
+<div className="absolute top-32 left-0 w-full z-30 sm:hidden">
+  <div className="relative w-full h-40">
+    <img
+      src="/icons/CSS3.png"
+      alt="CSS"
+      className="absolute left-6 top-4 w-8 h-8 animate-[float_3.8s_ease-in-out_infinite] rotate-[8deg]"
+    />
+    <img
+      src="/icons/JavaScript.png"
+      alt="JS"
+      className="absolute left-1/3 top-10 w-8 h-8 animate-[float_4s_ease-in-out_infinite] rotate-[-6deg]"
+    />
+    <img
+      src="/icons/android.png"
+      alt="Android"
+      className="absolute left-[55%] top-2 w-8 h-8 animate-[float_4.2s_ease-in-out_infinite] rotate-[10deg]"
+    />
+    <img
+      src="/icons/Docker.png"
+      alt="Docker"
+      className="absolute right-16 top-12 w-8 h-8 animate-[float_4.5s_ease-in-out_infinite] rotate-[-4deg]"
+    />
+    <img
+      src="/icons/vsc.png"
+      alt="VS Code"
+      className="absolute right-6 top-6 w-8 h-8 animate-[float_3.6s_ease-in-out_infinite] rotate-[6deg]"
+    />
+  </div>
+</div>
 
       {/* Footer */}
       <Footer />
