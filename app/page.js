@@ -108,7 +108,7 @@ export default function Home() {
       </div>
 
       {/* Optional: Minimal Floating Tech Icons on Mobile */}
-      <div className="absolute top-20 left-0 w-full flex justify-center gap-6 z-30 sm:hidden">
+      <div className="absolute top-32 left-0 w-full flex justify-center gap-6 z-30 sm:hidden">
         <img src="/icons/CSS3.png" alt="CSS" className="w-8 h-8 animate-bounce" />
         <img src="/icons/JavaScript.png" alt="JS" className="w-8 h-8 animate-bounce delay-200" />
         <img src="/icons/android.png" alt="Android" className="w-8 h-8 animate-bounce delay-400" />
