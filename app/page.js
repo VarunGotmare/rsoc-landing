@@ -80,7 +80,7 @@ export default function Home() {
         <img
           src="https://i.postimg.cc/xdNsN8ZN/prized.png"
           alt="Prize"
-          className="w-full h-auto object-contain drop-shadow-lg"
+          className="w-auto h-auto  drop-shadow-lg"
         />
       </div>
 

@@ -16,7 +16,7 @@ export default function Navbar() {
       <div className="flex items-center justify-between px-6 py-4 sm:px-10 sm:py-6 font-[family-name:var(--font-geist-sans)]">
         <Link href="/">
           <img
-            src="/rsoc.png"
+            src="https://i.postimg.cc/5t4yKQwD/logoo.png"
             alt="RSOC 2025 Logo"
             className="h-10 w-auto object-contain transition-transform duration-300 ease-in-out scale-150 hover:scale-170"
           />
