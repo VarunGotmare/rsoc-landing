@@ -1,10 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
+  
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prev) => !prev);
   };
@@ -12,18 +13,20 @@ export default function Navbar() {
   return (
     <header className="fixed top-6 left-1/2 z-50 -translate-x-1/2 w-[90%] sm:w-[80%] max-w-6xl rounded-2xl border border-[#ffd319] bg-white/80 backdrop-blur-md shadow-xl transition-all duration-300 group">
       <div className="flex items-center justify-between px-6 py-4 sm:px-10 sm:py-6 font-[family-name:var(--font-geist-sans)]">
+      <Link href="/">
         <img
           src="/rsoc.png"
           alt="RSOC 2025 Logo"
           className="h-10 w-auto object-contain transition-transform duration-300 ease-in-out scale-150 hover:scale-170"
         />
+        </Link>
 
         {/* Desktop Nav Links */}
         <nav className="hidden sm:flex space-x-6 text-sm text-black">
           {["About", "Tracks", "Register", "Contact"].map((item) => (
             <a
               key={item}
-              href={`#${item.toLowerCase()}`}
+              href={`${item.toLowerCase()}`}
               className="relative inline-block text-lg font-bold text-black hover:text-yellow-900 hover:bg-yellow-100 px-2 py-1 rounded-md transition duration-300"
             >
               {item}
