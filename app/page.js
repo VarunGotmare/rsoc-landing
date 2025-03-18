@@ -142,14 +142,14 @@ export default function Home() {
       <Footer />
 
       {/* Floating Prize Images - Only sm+ */}
-      <div className="hidden sm:block fixed bottom-24 right-10 w-24 sm:w-40 md:w-60 z-50">
+      <div className="hidden sm:block fixed bottom-24 right-10 w-24 sm:w-40 md:w-60 z-50 floating-prize">
         <img
           src="/prized.png"
           alt="Prize"
           className="w-auto h-auto drop-shadow-lg"
         />
       </div>
-      <div className="hidden sm:block fixed bottom-24 left-10 w-24 sm:w-40 md:w-60 z-50">
+      <div className="hidden sm:block fixed bottom-24 left-10 w-24 sm:w-40 md:w-60 z-50 floating-prize">
         <img
           src="/float.png"
           alt="Prize"
