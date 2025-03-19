@@ -78,7 +78,7 @@ export default function Navbar() {
             </Link>
             <a
               key={"Register"}
-              href={"https://form.typeform.com/to/WN79Ogrg"}
+              href={process.env.REGISTRATION_LINK}
               className="w-full px-4 py-2 rounded-md hover:bg-yellow-100 transition"
             >
               Register
