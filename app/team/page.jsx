@@ -34,7 +34,7 @@ function TeamCard({ title, description, imageSrc, githubUrl, linkedinUrl }) {
           <CardItem
             translateZ={20}
             as={Link}
-            href={`tel:7499975919`}
+            href={`tel:7888008363`}
             target="_blank"
             className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white">
             contact →
@@ -45,7 +45,7 @@ function TeamCard({ title, description, imageSrc, githubUrl, linkedinUrl }) {
             {githubUrl && (
                 <Link href={githubUrl} target="_blank">
                     <Image
-                        src="/icons/github.png"
+                        src="/icons/GitHub.png"
                         alt="github"
                         width="40"
                         height="40"
