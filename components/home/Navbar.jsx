@@ -43,7 +43,7 @@ export default function Navbar() {
               href={"https://form.typeform.com/to/WN79Ogrg"}
               className="relative inline-block text-lg font-bold text-black hover:text-yellow-900 hover:bg-yellow-100 px-2 py-1 rounded-md transition duration-300"
             >
-              Register
+              Register (Demo)
             </a>
         </nav>
 
