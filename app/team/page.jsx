@@ -6,7 +6,7 @@ import { CardBody, CardContainer, CardItem } from "../../components/ui/3d-card";
 import Link from "next/link";
 
 // Single card component
-function TeamCard({ title, description, imageSrc }) {
+function TeamCard({ title, description, imageSrc, githubUrl, linkedinUrl }) {
   return (
     <CardContainer className="inter-var">
       <CardBody
@@ -30,20 +30,40 @@ function TeamCard({ title, description, imageSrc }) {
             className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
             alt="thumbnail" />
         </CardItem>
-        <div className="flex justify-between items-center mt-20">
+        <div className="flex items-center mt-20">
           <CardItem
             translateZ={20}
             as={Link}
-            href="7499975919"
-            target="__blank"
+            href={`tel:7499975919`}
+            target="_blank"
             className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white">
             contact →
           </CardItem>
-          <CardItem
-            translateZ={20}
-            as="button"
-            className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
-            Instagram 
+          
+          {/* Social Media Icons */}
+          <CardItem translateZ="80" className="ml-auto flex">
+            {githubUrl && (
+                <Link href={githubUrl} target="_blank">
+                    <Image
+                        src="/icons/github.png"
+                        alt="github"
+                        width="40"
+                        height="40"
+                        className="mx-3" // Removed invert class
+                    />
+                </Link>
+            )}
+            {linkedinUrl && (
+                <Link href={linkedinUrl} target="_blank">
+                    <Image
+                        src="/icons/linkedin.png"
+                        alt="linkedin"
+                        width="40"
+                        height="40"
+                        className="mx-3" // Removed invert class
+                    />  
+                </Link>
+            )}
           </CardItem>
         </div>
       </CardBody>
@@ -57,32 +77,44 @@ export default function TeamPage() {
     {
       title: "Varun Gotmare",
       description: "Front-end Developer",
-      imageSrc: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      imageSrc: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      githubUrl: "https://github.com/username1",
+      linkedinUrl: "https://linkedin.com/in/username1"
     },
     {
       title: "Shahanawaz Ansari",
       description: "Back-end Developer",
-      imageSrc: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      imageSrc: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      githubUrl: "https://github.com/username2",
+      linkedinUrl: "https://linkedin.com/in/username2"
     },
     {
       title: "Mandar Tule",
       description: "UI/UX Designer",
-      imageSrc: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      imageSrc: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      githubUrl: "https://github.com/username3",
+      linkedinUrl: "https://linkedin.com/in/username3"
     },
     {
       title: "Saisidhartha Paidi",
       description: "Product Manager",
-      imageSrc: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      imageSrc: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      githubUrl: "https://github.com/username4",
+      linkedinUrl: "https://linkedin.com/in/username4"
     },
     {
       title: "Shruti Singh",
       description: "DevOps Engineer",
-      imageSrc: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      imageSrc: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      githubUrl: "https://github.com/username5",
+      linkedinUrl: "https://linkedin.com/in/username5"
     },
     {
       title: "Team Member 6",
       description: "Data Scientist",
-      imageSrc: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      imageSrc: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      githubUrl: "https://github.com/username6",
+      linkedinUrl: "https://linkedin.com/in/username6"
     }
   ];
 
@@ -96,6 +128,8 @@ export default function TeamPage() {
               title={member.title}
               description={member.description}
               imageSrc={member.imageSrc}
+              githubUrl={member.githubUrl}
+              linkedinUrl={member.linkedinUrl}
             />
           </div>
         ))}
