@@ -60,31 +60,32 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Dropdown Menu */}
-      {isMobileMenuOpen && (
-        <div className="sm:hidden flex flex-col items-center bg-white border-t border-[#ffd319] px-6 py-4 space-y-4 text-center text-lg font-semibold text-black rounded-b-2xl shadow-inner transition-all duration-300">
-          <Link
-              key={"About"}
-              href={`/about`}
-              className="w-full px-4 py-2 rounded-md  hover:bg-yellow-100 transition"
-            >
-              About
-            </Link>
-            <Link
-              key={"Our Team"}
-              href={`/team`}
-              className="w-full px-4 py-2 rounded-md hover:bg-yellow-100 transition"
-            >
-              Our Team
-            </Link>
-            <a
-              key={"Register"}
-              href={process.env.REGISTRATION_LINK}
-              className="w-full px-4 py-2 rounded-md hover:bg-yellow-100 transition"
-            >
-              Register
-            </a>
-        </div>
-      )}
+{isMobileMenuOpen && (
+  <div className="sm:hidden flex flex-col items-center bg-white border-t border-[#ffd319] px-6 py-4 space-y-4 text-center text-lg font-semibold text-black rounded-b-2xl shadow-inner transition-all duration-300">
+    <Link
+      href="/about"
+      onClick={() => setIsMobileMenuOpen(false)}
+      className="w-full px-4 py-2 rounded-md hover:bg-yellow-100 transition"
+    >
+      About
+    </Link>
+    <Link
+      href="/team"
+      onClick={() => setIsMobileMenuOpen(false)}
+      className="w-full px-4 py-2 rounded-md hover:bg-yellow-100 transition"
+    >
+      Our Team
+    </Link>
+    <a
+      href={process.env.REGISTRATION_LINK}
+      onClick={() => setIsMobileMenuOpen(false)}
+      className="w-full px-4 py-2 rounded-md hover:bg-yellow-100 transition"
+    >
+      Register
+    </a>
+  </div>
+)}
+
 
       {/* Yellow Glow on Hover Proximity (Desktop only) */}
       <div className="hidden sm:block absolute inset-0 rounded-2xl pointer-events-none group-hover:border-[1.5px] group-hover:border-[#ffd319] group-hover:shadow-[0_0_40px_rgba(255,215,0,0.5)] transition-all duration-300 ease-in-out" />
