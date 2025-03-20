@@ -23,28 +23,28 @@ const teamData = [
   {
     title: "Harsh Giripunje",
     description: "Management Lead",
-    imageSrc: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&auto=format&fit=crop",
+    imageSrc: "/team/harsh.jpg",
     githubUrl: "https://github.com/username3",
     linkedinUrl: "https://linkedin.com/in/username3"
   },
   {
     title: "Darpan Soni",
     description: "Event Co-Head",
-    imageSrc: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800&auto=format&fit=crop",
+    imageSrc: "/team/darpan.jpg",
     githubUrl: "https://github.com/username4",
     linkedinUrl: "https://linkedin.com/in/username4"
   },
   {
     title: "Shruti Singh Thakur",
     description: "Event Co-Head",
-    imageSrc: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&auto=format&fit=crop",
+    imageSrc: "/team/shruti.jpg",
     githubUrl: "https://github.com/username5",
     linkedinUrl: "https://linkedin.com/in/username5"
   },
   {
     title: "Sai Siddhartha Paidi",
     description: "Technical Team",
-    imageSrc: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&auto=format&fit=crop",
+    imageSrc: "/team/sai.jpg",
     githubUrl: "https://github.com/username6",
     linkedinUrl: "https://linkedin.com/in/username6"
   },
@@ -65,7 +65,7 @@ const teamData = [
   {
     title: "Gunjan Gawande",
     description: "Management Team",
-    imageSrc: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&auto=format&fit=crop",
+    imageSrc: "/team/gunjan.jpg",
     githubUrl: "https://github.com/username6",
     linkedinUrl: "https://linkedin.com/in/username6"
   }
