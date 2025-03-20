@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { InteractiveGridPattern } from "@/components/magicui/interactive-grid-pattern";
 import StickyMarqueeBanner from "@/components/sticky-banner";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
 
 const teamData = [
   {
@@ -113,11 +114,11 @@ export default function TeamPage() {
         <p className="text-sm text-gray-200">{member.description}</p>
         <div className="flex gap-5 mt-3">
           <a href={member.githubUrl} target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
-            <FaGithub size={24} />
+            <FaGithub size={24} className="text-white hover:text-gray-300" />
           </a>
-          <a href={member.linkedinUrl} target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
-            <FaLinkedin size={24} />
-          </a>
+          <Link href={member.linkedinUrl} target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
+            <FaLinkedin size={24} className="text-white hover:text-gray-300" />
+          </Link>
         </div>
       </div>
     </motion.div>
