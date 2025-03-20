@@ -1,11 +1,9 @@
 "use client";
 
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 import { InteractiveGridPattern } from "@/components/magicui/interactive-grid-pattern";
 import StickyMarqueeBanner from "@/components/sticky-banner";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FocusCards } from "@/components/ui/focus-cards";
-import Link from "next/link";
 
 const teamData = [
   {
@@ -55,7 +53,6 @@ const teamData = [
 export default function TeamPage() {
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-start bg-gray-50 pt-40 pb-12 px-4 sm:px-6 overflow-hidden">
-
       {/* Background Grid Pattern */}
       <div className="absolute inset-0 z-0 opacity-40">
         <InteractiveGridPattern />
@@ -87,7 +84,7 @@ export default function TeamPage() {
         </motion.p>
       </motion.div>
 
-      {/* Team Grid using Focus Cards */}
+      {/* Team Grid */}
       <div className="relative z-10 w-full max-w-6xl mx-auto mt-12">
         <FocusCards teamMembers={teamData} />
       </div>
