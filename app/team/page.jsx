@@ -58,7 +58,7 @@ const teamData = [
   {
     title: "Natasha Khandar",
     description: "Management Team",
-    imageSrc: "/team/natasha.jpg",
+    imageSrc: "/team/natashaa.jpg",
     githubUrl: "https://github.com/username6",
     linkedinUrl: "https://linkedin.com/in/username6"
   },
