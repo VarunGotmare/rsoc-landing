@@ -62,7 +62,7 @@ export default function Home() {
 
         {/* Register Button with Confetti */}
         <a
-          href={process.env.REGISTRATION_LINK}
+          href={"https://forms.gle/VXa477ursSk6jqkq7"}
           onMouseEnter={handleHover}
           className="mt-5 inline-block rounded-full border-4 border-blue-600 bg-pink-400 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-xl font-extrabold text-white shadow-[4px_4px_0px_rgba(0,0,0,0.9)] transition duration-300 ease-in-out hover:translate-x-1 hover:translate-y-1 hover:shadow-[2px_2px_0px_rgba(0,0,0,0.8)] hover:scale-105"
         >

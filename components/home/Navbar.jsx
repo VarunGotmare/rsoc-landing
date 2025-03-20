@@ -48,7 +48,7 @@ export default function Navbar() {
             Partners
           </Link>
           <a
-            href="https://form.typeform.com/to/WN79Ogrg"
+            href="https://forms.gle/VXa477ursSk6jqkq7"
             className="relative inline-block text-lg font-bold text-black hover:text-yellow-900 hover:bg-yellow-100 px-2 py-1 rounded-md transition duration-300"
           >
             Register
@@ -99,7 +99,7 @@ export default function Navbar() {
             Partners
           </Link>
           <a
-            href="https://form.typeform.com/to/WN79Ogrg"
+            href="https://forms.gle/VXa477ursSk6jqkq7"
             onClick={() => setIsMobileMenuOpen(false)}
             className="w-full px-4 py-2 rounded-md hover:bg-yellow-100 transition"
           >
