@@ -5,6 +5,7 @@ import { InteractiveGridPattern } from "@/components/magicui/interactive-grid-pa
 import StickyMarqueeBanner from "@/components/sticky-banner";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FocusCards } from "@/components/ui/focus-cards";
+import Link from "next/link";
 
 const teamData = [
   {
@@ -50,6 +51,7 @@ const teamData = [
     linkedinUrl: "https://linkedin.com/in/username6"
   }
 ];
+
 export default function TeamPage() {
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-start bg-gray-50 pt-40 pb-12 px-4 sm:px-6 overflow-hidden">

@@ -11,7 +11,7 @@ export default function Footer() {
       {/* Right - Social Icons */}
       <div className="flex gap-4">
         <a
-          href="https://github.com/your-github"
+          href="https://github.com/VarunGotmare"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-black transition-colors duration-300"
@@ -27,7 +27,7 @@ export default function Footer() {
           <FaInstagram size={20} />
         </a>
         <a
-          href="https://linkedin.com/in/your-linkedin"
+          href="https://linkedin.com/in/varun-gotmare"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-blue-600 transition-colors duration-300"

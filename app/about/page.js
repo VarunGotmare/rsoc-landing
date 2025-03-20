@@ -51,7 +51,7 @@ export default function About() {
               value: 25000,
             },
             {
-              title: "🤝 Team Size 4",
+              title: "🤝 Team Size 2-4",
               content:
                 "Our hackathons encourage dynamic collaboration within 4-member groups, where every voice matters and teamwork transforms ideas into reality.",
             },
