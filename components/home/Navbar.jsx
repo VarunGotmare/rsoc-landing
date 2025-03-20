@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useState } from "react";
 
-
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -24,34 +23,36 @@ export default function Navbar() {
 
         {/* Desktop Nav Links */}
         <nav className="hidden sm:flex space-x-6 text-sm text-black">
-        <Link
-              key={"About"}
-              href={`/about`}
-              className="relative inline-block text-lg font-bold text-black hover:text-yellow-900 hover:bg-yellow-100 px-2 py-1 rounded-md transition duration-300"
-            >
-              About
-            </Link>
-            <Link
-              key={"Rules"}
-              href={`/rules`}
-              className="relative inline-block text-lg font-bold text-black hover:text-yellow-900 hover:bg-yellow-100 px-2 py-1 rounded-md transition duration-300"
-            >
-              Rules
-            </Link>
-            <Link
-              key={"Our Team"}
-              href={`/team`}
-              className="relative inline-block text-lg font-bold text-black hover:text-yellow-900 hover:bg-yellow-100 px-2 py-1 rounded-md transition duration-300"
-            >
-              Our Team
-            </Link>
-            <a
-              key={"Register"}
-              href={"https://form.typeform.com/to/WN79Ogrg"}
-              className="relative inline-block text-lg font-bold text-black hover:text-yellow-900 hover:bg-yellow-100 px-2 py-1 rounded-md transition duration-300"
-            >
-              Register
-            </a>
+          <Link
+            href="/about"
+            className="relative inline-block text-lg font-bold text-black hover:text-yellow-900 hover:bg-yellow-100 px-2 py-1 rounded-md transition duration-300"
+          >
+            About
+          </Link>
+          <Link
+            href="/rules"
+            className="relative inline-block text-lg font-bold text-black hover:text-yellow-900 hover:bg-yellow-100 px-2 py-1 rounded-md transition duration-300"
+          >
+            Rules
+          </Link>
+          <Link
+            href="/team"
+            className="relative inline-block text-lg font-bold text-black hover:text-yellow-900 hover:bg-yellow-100 px-2 py-1 rounded-md transition duration-300"
+          >
+            Our Team
+          </Link>
+          <Link
+            href="/partners"
+            className="relative inline-block text-lg font-bold text-black hover:text-yellow-900 hover:bg-yellow-100 px-2 py-1 rounded-md transition duration-300"
+          >
+            Partners
+          </Link>
+          <a
+            href="https://form.typeform.com/to/WN79Ogrg"
+            className="relative inline-block text-lg font-bold text-black hover:text-yellow-900 hover:bg-yellow-100 px-2 py-1 rounded-md transition duration-300"
+          >
+            Register
+          </a>
         </nav>
 
         {/* Mobile Hamburger */}
@@ -67,39 +68,45 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Dropdown Menu */}
-{isMobileMenuOpen && (
-  <div className="sm:hidden flex flex-col items-center bg-white border-t border-[#ffd319] px-6 py-4 space-y-4 text-center text-lg font-semibold text-black rounded-b-2xl shadow-inner transition-all duration-300">
-    <Link
-      href="/about"
-      onClick={() => setIsMobileMenuOpen(false)}
-      className="w-full px-4 py-2 rounded-md hover:bg-yellow-100 transition"
-    >
-      About
-    </Link>
-    <Link
-      href="/rules"
-      onClick={() => setIsMobileMenuOpen(false)}
-      className="w-full px-4 py-2 rounded-md hover:bg-yellow-100 transition"
-    >
-      Rules
-    </Link>
-    <Link
-      href="/team"
-      onClick={() => setIsMobileMenuOpen(false)}
-      className="w-full px-4 py-2 rounded-md hover:bg-yellow-100 transition"
-    >
-      Our Team
-    </Link>
-    <a
-      href={process.env.REGISTRATION_LINK}
-      onClick={() => setIsMobileMenuOpen(false)}
-      className="w-full px-4 py-2 rounded-md hover:bg-yellow-100 transition"
-    >
-      Register
-    </a>
-  </div>
-)}
-
+      {isMobileMenuOpen && (
+        <div className="sm:hidden flex flex-col items-center bg-white border-t border-[#ffd319] px-6 py-4 space-y-4 text-center text-lg font-semibold text-black rounded-b-2xl shadow-inner transition-all duration-300">
+          <Link
+            href="/about"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="w-full px-4 py-2 rounded-md hover:bg-yellow-100 transition"
+          >
+            About
+          </Link>
+          <Link
+            href="/rules"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="w-full px-4 py-2 rounded-md hover:bg-yellow-100 transition"
+          >
+            Rules
+          </Link>
+          <Link
+            href="/team"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="w-full px-4 py-2 rounded-md hover:bg-yellow-100 transition"
+          >
+            Our Team
+          </Link>
+          <Link
+            href="/partners"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="w-full px-4 py-2 rounded-md hover:bg-yellow-100 transition"
+          >
+            Partners
+          </Link>
+          <a
+            href="https://form.typeform.com/to/WN79Ogrg"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="w-full px-4 py-2 rounded-md hover:bg-yellow-100 transition"
+          >
+            Register
+          </a>
+        </div>
+      )}
 
       {/* Yellow Glow on Hover Proximity (Desktop only) */}
       <div className="hidden sm:block absolute inset-0 rounded-2xl pointer-events-none group-hover:border-[1.5px] group-hover:border-[#ffd319] group-hover:shadow-[0_0_40px_rgba(255,215,0,0.5)] transition-all duration-300 ease-in-out" />
