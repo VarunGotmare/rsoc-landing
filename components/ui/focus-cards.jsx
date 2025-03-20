@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { motion } from "framer-motion"; // 👈 Import motion
+import { motion } from "framer-motion";
 
 export function FocusCards({ cards, teamMembers }) {
   const [hovered, setHovered] = useState(null);
@@ -21,11 +21,10 @@ export function FocusCards({ cards, teamMembers }) {
             hovered !== null && hovered !== index && "blur-sm scale-[0.98]"
           )}
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 + index * 0.15 }}
         >
-          {/* Image Container - fixed height image */}
+          {/* Image Container */}
           <div className="absolute inset-0 z-0">
             <Image
               src={item.src || item.imageSrc}
