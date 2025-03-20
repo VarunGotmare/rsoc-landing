@@ -51,14 +51,14 @@ const teamData = [
   {
     title: "Mandar Tule",
     description: "Technical Team",
-    imageSrc: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&auto=format&fit=crop",
+    imageSrc: "/team/mandar.jpg",
     githubUrl: "https://github.com/username6",
     linkedinUrl: "https://linkedin.com/in/username6"
   },
   {
     title: "Natasha Khandar",
     description: "Management Team",
-    imageSrc: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&auto=format&fit=crop",
+    imageSrc: "/team/natasha.jpg",
     githubUrl: "https://github.com/username6",
     linkedinUrl: "https://linkedin.com/in/username6"
   },
