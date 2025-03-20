@@ -7,43 +7,64 @@ import { FocusCards } from "@/components/ui/focus-cards";
 
 const teamData = [
   {
-    title: "Varun Gotmare",
-    description: "Front-end Developer",
-    imageSrc: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&auto=format&fit=crop",
+    title: "Shahanawaz Ansari",
+    description: "Event Head",
+    imageSrc: "/team/shahnawaz.jpg",
     githubUrl: "https://github.com/username1",
     linkedinUrl: "https://linkedin.com/in/username1"
   },
   {
-    title: "Shahanawaz Ansari",
-    description: "Back-end Developer",
-    imageSrc: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop",
+    title: "Varun Gotmare",
+    description: "Technical Lead",
+    imageSrc: "/team/varun.jpg",
     githubUrl: "https://github.com/username2",
     linkedinUrl: "https://linkedin.com/in/username2"
   },
   {
-    title: "Mandar Tule",
-    description: "UI/UX Designer",
+    title: "Harsh Giripunje",
+    description: "Management Lead",
     imageSrc: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&auto=format&fit=crop",
     githubUrl: "https://github.com/username3",
     linkedinUrl: "https://linkedin.com/in/username3"
   },
   {
-    title: "Saisidhartha Paidi",
-    description: "Product Manager",
+    title: "Darpan Soni",
+    description: "Event Co-Head",
     imageSrc: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800&auto=format&fit=crop",
     githubUrl: "https://github.com/username4",
     linkedinUrl: "https://linkedin.com/in/username4"
   },
   {
-    title: "Shruti Singh",
-    description: "DevOps Engineer",
+    title: "Shruti Singh Thakur",
+    description: "Event Co-Head",
     imageSrc: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&auto=format&fit=crop",
     githubUrl: "https://github.com/username5",
     linkedinUrl: "https://linkedin.com/in/username5"
   },
   {
-    title: "Team Member 6",
-    description: "Data Scientist",
+    title: "Sai Siddhartha Paidi",
+    description: "Technical Team",
+    imageSrc: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&auto=format&fit=crop",
+    githubUrl: "https://github.com/username6",
+    linkedinUrl: "https://linkedin.com/in/username6"
+  },
+  {
+    title: "Mandar Tule",
+    description: "Technical Team",
+    imageSrc: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&auto=format&fit=crop",
+    githubUrl: "https://github.com/username6",
+    linkedinUrl: "https://linkedin.com/in/username6"
+  },
+  {
+    title: "Natasha Khandar",
+    description: "Management Team",
+    imageSrc: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&auto=format&fit=crop",
+    githubUrl: "https://github.com/username6",
+    linkedinUrl: "https://linkedin.com/in/username6"
+  },
+  {
+    title: "Gunjan Gawande",
+    description: "Management Team",
     imageSrc: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&auto=format&fit=crop",
     githubUrl: "https://github.com/username6",
     linkedinUrl: "https://linkedin.com/in/username6"
