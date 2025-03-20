@@ -42,18 +42,18 @@ const teamData = [
     linkedinUrl: "https://linkedin.com/in/username5"
   },
   {
-    title: "Sai Siddhartha Paidi",
+    title: "Saisidhartha Paidi",
     description: "Technical Team",
     imageSrc: "/team/sai.jpg",
-    githubUrl: "https://github.com/username6",
-    linkedinUrl: "https://linkedin.com/in/username6"
+    githubUrl: "https://github.com/SidharthaPaidi",
+    linkedinUrl: "https://linkedin.com/in/SidharthaPaidi"
   },
   {
     title: "Mandar Tule",
     description: "Technical Team",
     imageSrc: "/team/mandar.jpg",
-    githubUrl: "https://github.com/username6",
-    linkedinUrl: "https://linkedin.com/in/username6"
+    githubUrl: "https://github.com/mandartule",
+    linkedinUrl: "https://linkedin.com/in/mandartule"
   },
   {
     title: "Natasha Khandar",
