@@ -4,6 +4,7 @@ import { RetroGrid } from "@/components/magicui/retro-grid";
 import { FlipWords } from "@/components/ui/flip-words";
 import confetti from "canvas-confetti";
 import { useRef, useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const flipWords = [
@@ -17,8 +18,7 @@ export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Check screen size once on mount
-    setIsMobile(window.innerWidth < 640); // sm breakpoint (Tailwind)
+    setIsMobile(window.innerWidth < 640);
   }, []);
 
   const handleHover = () => {
@@ -39,9 +39,9 @@ export default function Home() {
 
   return (
     <div className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background font-[family-name:var(--font-geist-sans)]">
-      <div className="z-10 flex mt-20 sm:mt-12 flex-col items-center space-y-3.5 sm:space-y-3 text-center px-4">
+      <div className="z-10 flex mt-10 sm:mt-12 flex-col items-center space-y-3.5 sm:space-y-3 text-center px-4">
         {/* Department & Presents */}
-        <span className="text-xl sm:text-2xl font-semibold text-black tracking-wide">
+        <span className="text-xl sm:text-2xl mt-32 font-semibold text-black tracking-wide">
           Department of CSE Cyber Security
         </span>
         <span className="text-lg sm:text-xl font-medium text-neutral-700">
@@ -53,14 +53,14 @@ export default function Home() {
           Raisoni Summer Of Code
         </h1>
 
-        {/* FlipWords Only */}
+        {/* FlipWords Animation */}
         <div className="sm:mt-3 text-base sm:text-xl font-semibold text-black flex items-center justify-center">
           <span className="inline-block min-w-[220px] sm:min-w-[300px] text-center whitespace-nowrap">
             <FlipWords words={flipWords} />
           </span>
         </div>
 
-        {/* 🎉 Confetti Register Button */}
+        {/* Register Button with Confetti */}
         <a
           href={process.env.REGISTRATION_LINK}
           onMouseEnter={handleHover}
@@ -68,12 +68,43 @@ export default function Home() {
         >
           Register Now 💫
         </a>
+
+        {/* Community Partners */}
+        <div className="flex flex-col mt-6">
+          <h2 className="text-xl sm:text-2xl font-bold text-black mb-4 text-center">
+            Community Partners
+          </h2>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="flex flex-wrap justify-center gap-8 w-full"
+          >
+            <img
+              src="/partners/gfg.png"
+              alt="GFG"
+              className="h-20 sm:h-28 object-contain transition duration-300 sm:grayscale sm:hover:grayscale-0"
+            />
+            <img
+              src="/partners/thm.png"
+              alt="THM"
+              className="h-20 sm:h-28 object-contain transition duration-300 sm:grayscale sm:hover:grayscale-0"
+            />
+            <img
+              src="/partners/nexmeet.png"
+              alt="Nexmeet"
+              className="h-20 w-30 sm:h-28 object-contain transition duration-300 sm:grayscale sm:hover:grayscale-0"
+            />
+          </motion.div>
+        </div>
+
       </div>
 
-      {/* Retro Grid BG */}
+      {/* Retro Grid Background */}
       <RetroGrid />
 
-      {/* Floating Tech Icons - Visible on sm+ */}
+      {/* Floating Tech Icons - Only sm+ */}
       <div className="absolute top-32 left-0 w-full h-[200px] pointer-events-none z-30 hidden sm:block">
         <img
           src="/icons/CSS3.png"
@@ -107,41 +138,38 @@ export default function Home() {
         />
       </div>
 
-      {/* Scattered Floating Tech Icons on Mobile */}
-<div className="absolute top-32 left-0 w-full z-30 sm:hidden">
-  <div className="relative w-full h-40">
-    <img
-      src="/icons/CSS3.png"
-      alt="CSS"
-      className="absolute left-6 top-4 w-8 h-8 animate-[float_3.8s_ease-in-out_infinite] rotate-[8deg]"
-    />
-    <img
-      src="/icons/JavaScript.png"
-      alt="JS"
-      className="absolute left-1/3 top-10 w-8 h-8 animate-[float_4s_ease-in-out_infinite] rotate-[-6deg]"
-    />
-    <img
-      src="/icons/android.png"
-      alt="Android"
-      className="absolute left-[55%] top-2 w-8 h-8 animate-[float_4.2s_ease-in-out_infinite] rotate-[10deg]"
-    />
-    <img
-      src="/icons/Docker.png"
-      alt="Docker"
-      className="absolute right-16 top-12 w-8 h-8 animate-[float_4.5s_ease-in-out_infinite] rotate-[-4deg]"
-    />
-    <img
-      src="/icons/vsc.png"
-      alt="VS Code"
-      className="absolute right-6 top-6 w-8 h-8 animate-[float_3.6s_ease-in-out_infinite] rotate-[6deg]"
-    />
-  </div>
-</div>
+      {/* Floating Tech Icons - Mobile only */}
+      <div className="absolute top-32 left-0 w-full z-30 sm:hidden">
+        <div className="relative w-full h-40">
+          <img
+            src="/icons/CSS3.png"
+            alt="CSS"
+            className="absolute left-6 top-4 w-8 h-8 animate-[float_3.8s_ease-in-out_infinite] rotate-[8deg]"
+          />
+          <img
+            src="/icons/JavaScript.png"
+            alt="JS"
+            className="absolute left-1/3 top-10 w-8 h-8 animate-[float_4s_ease-in-out_infinite] rotate-[-6deg]"
+          />
+          <img
+            src="/icons/android.png"
+            alt="Android"
+            className="absolute left-[55%] top-2 w-8 h-8 animate-[float_4.2s_ease-in-out_infinite] rotate-[10deg]"
+          />
+          <img
+            src="/icons/Docker.png"
+            alt="Docker"
+            className="absolute right-16 top-12 w-8 h-8 animate-[float_4.5s_ease-in-out_infinite] rotate-[-4deg]"
+          />
+          <img
+            src="/icons/vsc.png"
+            alt="VS Code"
+            className="absolute right-6 top-6 w-8 h-8 animate-[float_3.6s_ease-in-out_infinite] rotate-[6deg]"
+          />
+        </div>
+      </div>
 
-      {/* Footer */}
-      <Footer />
-
-      {/* Floating Prize Images - Only sm+ */}
+      {/* Floating Prize Images */}
       <div className="hidden sm:block fixed bottom-24 right-10 w-24 sm:w-40 md:w-60 z-50 floating-prize">
         <img
           src="/prized.png"
@@ -156,6 +184,9 @@ export default function Home() {
           className="w-auto h-auto drop-shadow-lg"
         />
       </div>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
