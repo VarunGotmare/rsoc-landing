@@ -96,6 +96,11 @@ export default function Home() {
               alt="Nexmeet"
               className="h-20 w-30 sm:h-28 object-contain transition duration-300 sm:grayscale sm:hover:grayscale-0"
             />
+            <img
+              src="/partners/obc.jpg"
+              alt="OpenBox Community"
+              className="h-20 w-30 sm:h-28 object-contain transition duration-300 sm:grayscale sm:hover:grayscale-0"
+            />
           </motion.div>
         </div>
 
