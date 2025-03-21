@@ -14,7 +14,7 @@ export default function RulesPage() {
     },
     {
       title: "📍 Event Begins",
-      time: "8:30 AM | 26th March",
+      time: "9:30 AM | 26th March",
       content:
         "Participants are required to mark their attendance by scanning the QR code sent to their registered email.",
     },

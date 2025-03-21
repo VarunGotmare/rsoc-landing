@@ -41,7 +41,7 @@ export default function Home() {
     <div className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background font-[family-name:var(--font-geist-sans)]">
       <div className="z-10 flex mt-10 sm:mt-12 flex-col items-center space-y-3.5 sm:space-y-3 text-center px-4">
         {/* Department & Presents */}
-        <span className="text-xl sm:text-2xl mt-32 font-semibold text-black tracking-wide">
+        <span className="text-xl sm:text-2xl mt-44 font-semibold text-black tracking-wide">
           Department of CSE Cyber Security
         </span>
         <span className="text-lg sm:text-xl font-medium text-neutral-700">
