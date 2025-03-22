@@ -7,12 +7,7 @@ import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 export default function Home() {
-  const flipWords = [
-    "An 8 hour hackathon.",
-    "Powered by Cyber Security Department.",
-    "Build. Code. Compete.",
-    "RSOC 2025.",
-  ];
+
 
   const hasFired = useRef(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -39,7 +34,7 @@ export default function Home() {
 
   return (
     <div className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background font-[family-name:var(--font-geist-sans)]">
-      <div className="z-10 flex mt-10 sm:mt-12 flex-col items-center space-y-3.5 sm:space-y-3 text-center px-4">
+      <div className="z-10 flex mt-10 sm:mt-12 flex-col items-center space-y-3.5 sm:space-y-2 text-center px-4">
         {/* Department & Presents */}
         <span className="text-xl sm:text-2xl mt-44 font-semibold text-black tracking-wide">
           Department of CSE Cyber Security
@@ -53,12 +48,15 @@ export default function Home() {
           Raisoni Summer Of Code
         </h1>
 
-        {/* FlipWords Animation */}
-        <div className="sm:mt-3 text-base sm:text-xl font-semibold text-black flex items-center justify-center">
-          <span className="inline-block min-w-[220px] sm:min-w-[300px] text-center whitespace-nowrap">
-            <FlipWords words={flipWords} />
-          </span>
+        <div className="sm:mt-4 mt-2 text-center flex items-center justify-center">
+        <span className="text-xl sm:text-3xl font-extrabold bg-gradient-to-r from-indigo-800 via-purple-800 to-indigo-800 bg-clip-text text-transparent px-4 py-2 tracking-wide border border-neutral-700 rounded-lg shadow-sm">
+  An 8 Hour Hackathon
+</span>
+
         </div>
+
+
+
 
         {/* Register Button with Confetti */}
         <a
