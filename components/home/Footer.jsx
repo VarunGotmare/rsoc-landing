@@ -19,7 +19,7 @@ export default function Footer() {
           <FaGithub size={20} />
         </a>
         <a
-          href="https://instagram.com/your-instagram"
+          href="https://www.instagram.com/rsoc2o25/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-pink-600 transition-colors duration-300"

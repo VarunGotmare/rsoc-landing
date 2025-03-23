@@ -1,7 +1,6 @@
 "use client";
 import Footer from "@/components/home/Footer";
 import { RetroGrid } from "@/components/magicui/retro-grid";
-import { FlipWords } from "@/components/ui/flip-words";
 import confetti from "canvas-confetti";
 import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
@@ -49,14 +48,10 @@ export default function Home() {
         </h1>
 
         <div className="sm:mt-4 mt-2 text-center flex items-center justify-center">
-        <span className="text-xl sm:text-3xl font-extrabold bg-gradient-to-r from-indigo-800 via-purple-800 to-indigo-800 bg-clip-text text-transparent px-4 py-2 tracking-wide border border-neutral-700 rounded-lg shadow-sm">
-  An 8 Hour Hackathon
-</span>
-
+          <span className="text-xl sm:text-3xl font-extrabold bg-gradient-to-r from-indigo-800 via-purple-800 to-indigo-800 bg-clip-text text-transparent px-4 py-2 tracking-wide border border-neutral-700 rounded-lg shadow-sm">
+            An 8 Hour Hackathon
+          </span>
         </div>
-
-
-
 
         {/* Register Button with Confetti */}
         <a
