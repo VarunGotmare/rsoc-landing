@@ -17,8 +17,8 @@ const teamData = [
     title: "Varun Gotmare",
     description: "Technical Lead",
     imageSrc: "/team/blond.jpg",
-    githubUrl: "https://github.com/username2",
-    linkedinUrl: "https://linkedin.com/in/username2"
+    githubUrl: "https://github.com/varungotmare",
+    linkedinUrl: "https://linkedin.com/in/varungotmare"
   },
   {
     title: "Harsh Giripunje",
