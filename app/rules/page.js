@@ -14,7 +14,7 @@ export default function RulesPage() {
     },
     {
       title: "📍 Event Begins",
-      time: "9:30 AM | 26th March",
+      time: "9:30 AM | 8th April",
       content:
         "Participants are required to mark their attendance by scanning the QR code sent to their registered email.",
     },
@@ -25,7 +25,7 @@ export default function RulesPage() {
         "After attendance, all participants will proceed to the Inaugural Hall. Problem statements will be shared, followed by a detailed briefing session. Teams can then start working on their projects.",
     },
     {
-      title: "💡 Pitch Round",
+      title: "💡 Mentor Round",
       time: "12:30 PM - 1:30 PM",
       content:
         "Each team will be required to present a short pitch showcasing their progress and the idea behind their project to the jury panel.",
