@@ -4,37 +4,37 @@ import { InteractiveGridPattern } from "@/components/magicui/interactive-grid-pa
 import StickyMarqueeBanner from "@/components/sticky-banner";
 import { motion } from "framer-motion";
 
-export default function RulesPage() {
-  const rules = [
+export default function AgendaPage() {
+  const agenda = [
     {
-      title: "📌 Registration",
-      time: "Before Event",
-      content:
-        "All participants must register online before the event. Confirmation emails will include a unique QR code for attendance.",
+      title: "🎤 Inauguration & Problem Statement Selection",
+      time: "9:30 AM – 10:00 AM",
+      content: "Opening ceremony followed by problem statement selection.",
     },
     {
-      title: "📍 Event Begins",
-      time: "9:30 AM | 3th April",
-      content:
-        "Participants are required to mark their attendance by scanning the QR code sent to their registered email.",
+      title: "🚀 Hackathon Timer Starts",
+      time: "10:00 AM",
+      content: "Participants begin building their projects. The countdown begins!",
     },
     {
-      title: "🎤 Inaugural & Problem Statements",
-      time: "Post Attendance",
-      content:
-        "After attendance, all participants will proceed to the Inaugural Hall. Problem statements will be shared, followed by a detailed briefing session. Teams can then start working on their projects.",
+      title: "👨‍🏫 Guidance Round",
+      time: "12:15 PM",
+      content: "Mentors will visit teams for feedback and guidance.",
     },
     {
-      title: "💡 Mentor Round",
-      time: "12:30 PM - 1:30 PM",
-      content:
-        "Each team will be required to present a short pitch showcasing their progress and the idea behind their project to the jury panel.",
+      title: "🍱 Lunch Break (Hackathon Continues)",
+      time: "1:30 PM",
+      content: "Lunch will be provided to participants while the hackathon progresses.",
     },
     {
-      title: "🏁 Final Evaluation",
-      time: "4:30 PM - 6:30 PM",
-      content:
-        "Final presentations and evaluations will take place in the last phase of the hackathon. Teams will present their completed projects to the jury for final scoring.",
+      title: "🎤 Final Evaluation & Pitches",
+      time: "4:30 PM",
+      content: "Each team will present their MVP within a 3-minute pitch session.",
+    },
+    {
+      title: "🏆 Valedictory Speech & Winner Announcement",
+      time: "5:30 PM",
+      content: "Winners will be announced, followed by closing remarks.",
     },
   ];
 
@@ -54,7 +54,7 @@ export default function RulesPage() {
         className="text-center z-10"
       >
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-blue-600">
-          Hackathon Flow & Rules
+          Hackathon Event Agenda
         </h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -63,13 +63,13 @@ export default function RulesPage() {
           viewport={{ once: true }}
           className="mt-6 text-base sm:text-lg md:text-xl text-gray-800 max-w-2xl mx-auto bg-white/70 backdrop-blur-lg rounded-2xl px-6 py-4 shadow-lg border border-gray-200"
         >
-          Stay in sync with the event structure and rules. Here's a breakdown of how the day will unfold.
+          Stay updated with the schedule to make the most of the hackathon experience.
         </motion.p>
       </motion.div>
 
-      {/* Rules Cards Section */}
+      {/* Agenda Cards Section */}
       <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl z-10 mb-12">
-        {rules.map((rule, index) => (
+        {agenda.map((item, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 30 }}
@@ -79,13 +79,13 @@ export default function RulesPage() {
             className="p-6 bg-white/80 backdrop-blur-md shadow-xl border border-gray-200 rounded-2xl transition-all hover:scale-[1.01] duration-300"
           >
             <h2 className="text-2xl sm:text-3xl font-semibold text-gray-900 mb-1">
-              {rule.title}
+              {item.title}
             </h2>
             <p className="text-sm sm:text-base font-medium text-gray-600 mb-2">
-              ⏰ {rule.time}
+              ⏰ {item.time}
             </p>
             <p className="text-sm sm:text-base md:text-lg text-gray-700">
-              {rule.content}
+              {item.content}
             </p>
           </motion.div>
         ))}

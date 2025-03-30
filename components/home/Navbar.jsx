@@ -30,10 +30,10 @@ export default function Navbar() {
             About
           </Link>
           <Link
-            href="/rules"
+            href="/agenda"
             className="relative inline-block text-lg font-bold text-black hover:text-yellow-900 hover:bg-yellow-100 px-2 py-1 rounded-md transition duration-300"
           >
-            Rules
+            Agenda
           </Link>
           <Link
             href="/team"
@@ -78,11 +78,11 @@ export default function Navbar() {
             About
           </Link>
           <Link
-            href="/rules"
+            href="/agenda"
             onClick={() => setIsMobileMenuOpen(false)}
             className="w-full px-4 py-2 rounded-md hover:bg-yellow-100 transition"
           >
-            Rules
+            Agenda
           </Link>
           <Link
             href="/team"
