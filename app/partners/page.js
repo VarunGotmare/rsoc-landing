@@ -30,8 +30,20 @@ export default function RulesPage() {
       name: "Open Box Community",
       description: "Grow Together.",
       link: "https://www.instagram.com/openbox_community_/",
-      logo: "/partners/obc.jpg"
+      logo: "/partners/obc.png"
     },
+    {
+      name: "GDSC Government College Of Engineering",
+      description: "Google Developer Student Club at GCoE Nagpur.",
+      link: "hhttps://gdg.community.dev/gdg-on-campus-government-college-of-engineering-nagpur-india/",
+      logo: "/partners/gdsc.png"
+    },
+    {
+      name: "GFG RRCOEM",
+      description: "GeeksforGeeks RRCOEM Student Chapter.",
+      link: "https://gfgrcoem.netlify.app/",
+      logo: "/partners/gfg-ram.png"
+    }
   ];
 
   return (
