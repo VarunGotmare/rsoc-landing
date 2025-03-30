@@ -6,8 +6,6 @@ import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 export default function Home() {
-
-
   const hasFired = useRef(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -63,39 +61,34 @@ export default function Home() {
         </a>
 
         {/* Community Partners */}
-        <div className="flex flex-col mt-6">
-          <h2 className="text-xl sm:text-2xl font-bold text-black mb-4 text-center">
-            Community Partners
-          </h2>
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="flex flex-wrap justify-center gap-8 w-full"
-          >
-            <img
-              src="/partners/gfg.png"
-              alt="GFG"
-              className="h-20 sm:h-28 object-contain transition duration-300 sm:grayscale sm:hover:grayscale-0"
-            />
-            <img
-              src="/partners/thm.png"
-              alt="THM"
-              className="h-20 sm:h-28 object-contain transition duration-300 sm:grayscale sm:hover:grayscale-0"
-            />
-            <img
-              src="/partners/nexmeet.png"
-              alt="Nexmeet"
-              className="h-20 w-30 sm:h-28 object-contain transition duration-300 sm:grayscale sm:hover:grayscale-0"
-            />
-            <img
-              src="/partners/obc.jpg"
-              alt="OpenBox Community"
-              className="h-20 w-30 sm:h-28 object-contain transition duration-300 sm:grayscale sm:hover:grayscale-0"
-            />
-          </motion.div>
-        </div>
+<div className="mt-8 sm:mt-10 w-full max-w-5xl px-4 sm:px-8 mb-20 sm:mb-0">
+  <h2 className="text-xl sm:text-2xl font-bold text-black text-center mb-4">
+    Community Partners
+  </h2>
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6 }}
+    viewport={{ once: true }}
+    className="grid grid-cols-2 sm:grid-cols-3 gap-6 place-items-center"
+  >
+    {[
+      { src: "/partners/gfg.png", alt: "GFG" },
+      { src: "/partners/thm.png", alt: "THM" },
+      { src: "/partners/nexmeet.png", alt: "Nexmeet" },
+      { src: "/partners/obc.jpg", alt: "OpenBox Community" },
+      { src: "/partners/gdsc.png", alt: "GDSC GCE Nagpur" },
+      { src: "/partners/gfg-ram.png", alt: "GFG RRCOEM" },
+    ].map((partner, index) => (
+      <img
+        key={index}
+        src={partner.src}
+        alt={partner.alt}
+        className="h-16 sm:h-20 object-contain transition duration-300 sm:grayscale sm:hover:grayscale-0"
+      />
+    ))}
+  </motion.div>
+</div>
 
       </div>
 
@@ -134,37 +127,6 @@ export default function Home() {
           alt="VS Code"
           className="absolute top-24 right-[22%] w-10 sm:w-14 animate-[float_4.2s_ease-in-out_infinite] rotate-[12deg]"
         />
-      </div>
-
-      {/* Floating Tech Icons - Mobile only */}
-      <div className="absolute top-32 left-0 w-full z-30 sm:hidden">
-        <div className="relative w-full h-40">
-          <img
-            src="/icons/CSS3.png"
-            alt="CSS"
-            className="absolute left-6 top-4 w-8 h-8 animate-[float_3.8s_ease-in-out_infinite] rotate-[8deg]"
-          />
-          <img
-            src="/icons/JavaScript.png"
-            alt="JS"
-            className="absolute left-1/3 top-10 w-8 h-8 animate-[float_4s_ease-in-out_infinite] rotate-[-6deg]"
-          />
-          <img
-            src="/icons/android.png"
-            alt="Android"
-            className="absolute left-[55%] top-2 w-8 h-8 animate-[float_4.2s_ease-in-out_infinite] rotate-[10deg]"
-          />
-          <img
-            src="/icons/Docker.png"
-            alt="Docker"
-            className="absolute right-16 top-12 w-8 h-8 animate-[float_4.5s_ease-in-out_infinite] rotate-[-4deg]"
-          />
-          <img
-            src="/icons/vsc.png"
-            alt="VS Code"
-            className="absolute right-6 top-6 w-8 h-8 animate-[float_3.6s_ease-in-out_infinite] rotate-[6deg]"
-          />
-        </div>
       </div>
 
       {/* Floating Prize Images */}
