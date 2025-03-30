@@ -6,7 +6,7 @@ export default function StickyMarqueeBanner() {
             .fill(null)
             .map((_, index) => (
               <span key={index} className="mx-8">
-                🚀 RSOC 2025 · Code | Build | Innovate · 8-Hour Hackathon · Prize Pool ₹25K+ 💰 · Powered by Cyber Security Dept · RSOC 2025 🚀
+                🚀 RSOC 2025 · Code | Build | Innovate · 6-Hour Hackathon · Prize Pool ₹25K+ 💰 · Powered by Cyber Security Dept · RSOC 2025 🚀
               </span>
             ))}
         </div>
