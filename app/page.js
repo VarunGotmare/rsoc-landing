@@ -76,7 +76,7 @@ export default function Home() {
       { src: "/partners/gfg.png", alt: "GFG" },
       { src: "/partners/thm.png", alt: "THM" },
       { src: "/partners/nexmeet.png", alt: "Nexmeet" },
-      { src: "/partners/obc.jpg", alt: "OpenBox Community" },
+      { src: "/partners/obc.png", alt: "OpenBox Community" },
       { src: "/partners/gdsc.png", alt: "GDSC GCE Nagpur" },
       { src: "/partners/gfg-ram.png", alt: "GFG RRCOEM" },
     ].map((partner, index) => (
