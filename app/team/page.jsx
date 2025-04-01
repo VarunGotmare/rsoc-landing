@@ -75,6 +75,20 @@ const teamData = [
     imageSrc: "/team/gunjan.jpg",
     githubUrl: "https://github.com/username6",
     linkedinUrl: "https://linkedin.com/in/username6"
+  },
+  {
+    title: "Rohini Mate",
+    description: "Technical Team",
+    imageSrc: "/team/rohini.jpg",
+    githubUrl: "",
+    linkedinUrl: ""
+  },
+  {
+    title: "Tanuj Panchariya",
+    description: "Marketing Team",
+    imageSrc: "/team/tanuj.jpg",
+    githubUrl: "",
+    linkedinUrl: ""
   }
 ];
 
