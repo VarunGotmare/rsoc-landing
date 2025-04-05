@@ -64,7 +64,7 @@ const teamData = [
   },
   {
     title: "Ayush Pandit",
-    description: "Publicity Team",
+    description: "Management Team",
     imageSrc: "/team/ayush-p.jpg",
     
   },
