@@ -63,6 +63,12 @@ const teamData = [
     linkedinUrl: "https://linkedin.com/in/aushpeddulwar"
   },
   {
+    title: "Ayush Pandit",
+    description: "Publicity Team",
+    imageSrc: "/team/ayush-p.jpg",
+    
+  },
+  {
     title: "Natasha Khandar",
     description: "Management Team",
     imageSrc: "/team/natashaa.jpg",
