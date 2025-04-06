@@ -95,6 +95,11 @@ const teamData = [
     imageSrc: "/team/tanuj.jpg",
     githubUrl: "https://linkedin.com/in/username6",
     linkedinUrl: "https://linkedin.com/in/username6"
+  },
+  {
+    title: "Siddhant Sakhare",
+    description: "Public Relations Team",
+    imageSrc: "/team/siddhaant.jpg",
   }
 ];
 
